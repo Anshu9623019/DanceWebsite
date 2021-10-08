@@ -1,0 +1,40 @@
+extends base.pug
+
+block scripts 
+    scripts(src="/static/index.pug")
+block style 
+    style 
+        include ../static/style.css
+block content 
+    section#mission
+       h2  Welcome to Dance Pe Chance Academy
+       h3  Eat Sleep Dance Repeat
+    section#Acess
+       h2 Our Mission
+       div#cards 
+        div.card-box
+           h2 Dance Performance
+           img(src="../static/img1.jpg", alt="")
+           p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, asperiores.
+           button.btn 
+              | Register Now
+        div.card-box
+           h2 Dance performance 
+           img(src="../static/img5.jpg", alt="")
+           p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, asperiores.
+           button.btn 
+              | Register Now
+        div.card-box
+          h2 Dance performance 
+          img(src="../static/img4.jpg", alt="")
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, asperiores. 
+          button.btn 
+            | Register Now  
+
+    section#sponsors 
+        h2 Our Sponsors
+        div#sp
+        img(src="/static/sp1.png", alt= "Sponsor Image", class= "spImage")
+        img(src="/static/sp2.png", alt= "Sponsor Image", class= "spImage")
+        img(src="/static/sp3.png", alt= "Sponsor Image", class= "spImage")
+    

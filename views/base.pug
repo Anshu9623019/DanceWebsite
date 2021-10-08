@@ -1,0 +1,23 @@
+doctype html
+html 
+    head
+        block title
+        block scripts  
+        block style 
+    body 
+     nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo.png")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+            li #[a(href="/") About]
+            //- button.btn 
+            //-  | Register Now
+     block content 
+     block footer 
+       footer#foot
+          p Copyright (c) DancepeChance.com | Alright Reserved
