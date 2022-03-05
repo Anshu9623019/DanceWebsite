@@ -3,8 +3,11 @@ const path = require("path");
 const app = express()
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
-mongoose.connect('mongodb://localhost/contact',{useNewParser:true});
-const port = 800;
+mongoose.connect('mongodb://localhost/contact',err => {
+    if(err) throw err;
+    console.log('connected to MongoDB')
+});
+const port =  process.env.PORT || 3000;
 
 
 //define mongoose schema
