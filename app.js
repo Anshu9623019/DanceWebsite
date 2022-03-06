@@ -1,9 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const app = express()
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
-mongoose.connect('mongodb://localhost/contact',err => {
+mongoose.connect(process.env.MONGO_URI,err => {
     if(err) throw err;
     console.log('connected to MongoDB')
 });
