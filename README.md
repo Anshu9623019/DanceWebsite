@@ -1,3 +1,3 @@
-# DanceWebsite
+DanceWebsite
 
-## checkout here https://dancetutorial.herokuapp.com/
+checkout here https://dancetutorial.herokuapp.com/
